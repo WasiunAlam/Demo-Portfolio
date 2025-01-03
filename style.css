@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 /* Default container (for large screens) */
 .container {
   width: 100%;
@@ -397,3 +398,37 @@ h2{
 .card>img:hover{
   transform: scale(1.2);
 }
+
+footer{
+  background-color: rgba(0, 0, 0, 0.897);
+  height: 350px;
+}
+footer>div>div>p{
+  color: rgb(192, 192, 192);
+  margin-top: 20px;
+  cursor: pointer;
+}
+footer>div>div>p:hover{
+  color: white;
+}
+footer>div>div>p:active{
+  color: white;
+}
+
+.footer-link{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 25px;
+}
+footer>p{
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 35px;
+}
+footer>p>i{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
