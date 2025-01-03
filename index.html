@@ -15,30 +15,30 @@
     <div class="logo">Portfolio</div>
     <nav>
       <ul>
-        <li><a href="" class="home">Home</a></li>
-        <li><a href="" class="about">About</a></li>
-        <li><a href="" class="project">Project</a></li>
-        <li><a href="" class="contact">Contact</a></li>
-        <button class="hire">Hire me</button>
+        <li><a href="#home" class="home">Home</a></li>
+        <li><a href="#about" class="about">About</a></li>
+        <li><a href="#project" class="project">Project</a></li>
+        <li><a href="#contact" class="contact">Contact</a></li>
+        <button class="hire" style="cursor: pointer;"><a href="#contact" style="color: white; font-weight: bold; text-decoration: none;">Hire me</a></button>
       </ul>
     </nav>
   </header>
 
-  <section class="hero-section ">
+  <section class="hero-section " id="home">
     <div class="hero-writing">
       <h1>Hi,I am Wasiun</h1>
       <h2>A frontend Developer</h2>
       <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptatum mollitia <br
           class="br">error at nisi reprehenderit quas quo nobis sint.</p>
-      <button class="hero-button">About me</button>
+      <button class="hero-button"><a href="#about" style="color: white; font-weight: bold; text-decoration: none;">About me</a></button>
     </div>
     <img src="hero-img.png.webp" alt="Sorry,the image is unavailable" class="hero-img">
   </section>
 
-  <section class=" about-section">
+  <section class=" about-section" id="about">
     <img src="about-img.png.webp" alt="sorry the image is unavailable" class="about-img">
-    <div class="about-writing">
-      <h1>I am a Frontend Developer</h1>
+    <div class="about-writing" >
+      <h1 >I am a Frontend Developer</h1>
       <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sequi temporibus ipsum
         quis nostrum impedit recusandae nihil eaque provident velit? Natus modi minus excepturi eum nihil fugit eligendi
         ab et!</p>
@@ -62,7 +62,7 @@
           <p class="value-p">Nothing</p>
         </div>
       </div>
-      <button class="hero-button">Learn more</button>
+      <button class="hero-button"><a href="#service" style="color: white; font-weight: bold; text-decoration: none;">Learn more</a></button>
     </div>
   </section>
 
@@ -112,7 +112,7 @@
     </div>
   </section>
 
-  <h2 class="myskill">My Services</h2>
+  <h2 class="myskill" id="service">My Services</h2>
 
   <section class="service ">
     <div class="card">
@@ -141,7 +141,7 @@
     </div>
   </section>
 
-  <h2 class="myskill">My Project</h2>
+  <h2 class="myskill" id="project">My Project</h2>
 
   <section class="service">
     <div class="card">
@@ -171,7 +171,7 @@
   </section>
 
   <footer>
-    <div class="container footer-link">
+    <div class="container footer-link" id="contact">
       <div class="link-container">
         <h2 class="footer-heading">Social Media</h2>
         <P class="f-links">Facebook</P>

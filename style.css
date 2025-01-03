@@ -10,6 +10,7 @@
 html,body{
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 body{
   display: flex;
@@ -33,6 +34,7 @@ header{
   padding-left: 35px;
   color: rgb(0, 81, 255);
   font-size: 24px;
+  font-weight: bold;
 }
 nav{
   width: 60%;
@@ -50,7 +52,7 @@ li{
   font-size: 18px;
   text-decoration: none;
   color: black;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 .home:hover,.about:hover,.project:hover,.contact:hover{
   color: rgb(0, 81, 255);
@@ -483,10 +485,10 @@ section{
     justify-content: center;
   }
   .topic-p{
-    font-size: 12.5px;
+    font-size: 11px;
   }
   .value-p{
-    font-size: 13px;
+    font-size: 12px;
   }
   footer>div>div>p{
     text-align: start;
@@ -502,5 +504,8 @@ section{
   .hero-section{
     display: flex;
     flex-direction: column;
+  }
+  .logo{
+    padding-left: 20px;
   }
 }
