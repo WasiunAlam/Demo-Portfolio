@@ -158,3 +158,242 @@ h2{
   height: 500px;
   width: auto;
 }
+
+/*About*/
+
+.about-section{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-writing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.table{
+  display: flex;
+  margin-top: 20px;
+}
+.topic{
+  color: rgb(0, 68, 255);
+}
+.topic-p,.value-p{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.about-writing>h1{
+  margin-top: 10px;
+}
+.about-text{
+  line-height: 25px;
+  margin-top: 20px;
+}
+.about-writing>button{
+  margin-top: 40px;
+}
+
+
+
+/* Skill progress container */
+/* Skill grid container */
+.skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the columns to fit your needs */
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 70px;
+}
+
+/* Skill container layout */
+.skill-container {
+  display: grid; /* Use grid layout for each skill */
+  grid-template-columns: 100px 1fr; /* 100px for the skill name and the rest for the progress bar */
+  align-items: center; /* Align items vertically in the center */
+  gap: 15px; /* Space between skill name and progress bar */
+  width: 100%;
+}
+
+/* Style for the skill name */
+.skill-container > p {
+  margin: 0; /* Remove any margin to avoid unnecessary space */
+  width: 100%; /* Ensure the skill name takes up its designated space */
+  font-weight: bold;
+}
+
+/* Progress bar container */
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflow for smooth border effect */
+}
+
+/* Progress bar itself */
+.progress-bar {
+  height: 100%;
+  background-color: rgb(0, 81, 255); /* Progress color */
+  border-radius: 10px 10px 10px 0; /* Round the right side */
+  width: 0%; /* Start with 0% width */
+  
+}
+
+
+
+
+.html {
+  background-color: #e44d26; /* HTML color */
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation: progress-a 2s ease-out forwards; /* Animation for width */
+}
+
+/* Keyframes for animating the progress */
+@keyframes progress-a {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 80%; /* Change this value to represent the skill level */
+  }
+}
+
+.css {
+  background-color: #2965f1; /* CSS color */
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation: progress-b 2s ease-out forwards;
+}
+@keyframes progress-b {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 60%; /* Change this value to represent the skill level */
+  }
+}
+
+.js {
+  background-color: #f7df1e; /* JavaScript color */
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation: progress-c 2s ease-out forwards;
+}
+@keyframes progress-c {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 50%; /* Change this value to represent the skill level */
+  }
+}
+
+.bootstrap {
+  background-color: #306998; /* Python color */
+  animation-duration: 2.5s;
+  animation-delay: 1.5s;
+  animation: progress-d 2s ease-out forwards;
+}
+@keyframes progress-d {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 80%; /* Change this value to represent the skill level */
+  }
+}
+
+.react {
+  background-color: #61dafb; /* React color */
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation: progress-e 2s ease-out forwards;
+}
+@keyframes progress-e {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 20%; /* Change this value to represent the skill level */
+  }
+}
+
+.webflow {
+  background-color: #8cc84b; /* Node.js color */
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+  animation: progress-f 2s ease-out forwards;
+}
+@keyframes progress-f {
+  0% {
+    width: 0%; /* Start at 0% */
+  }
+  100% {
+    width: 70%; /* Change this value to represent the skill level */
+  }
+}
+
+.myskill{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  margin-top: 70px;
+}
+
+
+.service{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 22%;
+  height: 500px;
+  text-align: center;
+  margin-top: 80px;
+}
+.card:hover{
+  background-color: rgb(245, 249, 255);
+  border-radius: 7px;
+}
+.card-topic{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 68, 255);
+}
+.card-text{
+  color: rgb(110, 110, 110);
+  font-size: 16px;
+}
+.card-button{
+  background-color: rgb(0, 68, 255);
+  color: white;
+  height: 45px;
+  width: 90%;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card-button:hover{
+  border: 1px solid black;
+  background-color: rgb(0, 40, 255);
+}
+.card-button:active{
+  background-color: rgb(0, 26, 255);
+  width: 85%;
+}
+.card>img{
+  width: 80%;
+  height: 45%;
+  transition: transform 0.4s ease;
+}
+.card>img:hover{
+  transform: scale(1.2);
+}
