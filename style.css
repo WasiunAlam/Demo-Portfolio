@@ -5,62 +5,17 @@
   font-family: sans-serif;
 }
 
-/* Default container (for large screens) */
-.container {
+ 
+
+html,body{
+  height: 100%;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Container for small screens */
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-/* Container for medium screens */
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-/* Container for large screens */
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-/* Container for extra large screens */
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-/* Container for extra-extra large screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-/* Container for ultra large screens */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
 }
 body{
   display: flex;
   flex-direction: column;
 }
+
 
 /*Navbar*/
 header{
@@ -71,6 +26,7 @@ header{
   height: 100px;
   align-items:center ;
   background-color: white;
+  margin-top: 0;
 }
 .logo{
   width: 30%;
@@ -111,15 +67,27 @@ li{
   font-size: 22px;
   color: rgb(0, 81, 255);
 }
-
+.hire{
+  height: 50px;
+  width: 100px;
+  background-color: rgb(0, 81, 255);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  align-self: right;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
 /*hero Section*/
 
 .hero-section{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 80px;
-  height: auto;
 }
+
 h1{
   color: rgb(0, 68, 255);
   margin-top: 100px;
@@ -165,7 +133,7 @@ h2{
 .about-section{
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .about-writing{
   display: flex;
@@ -189,6 +157,9 @@ h2{
 .about-text{
   line-height: 25px;
   margin-top: 20px;
+  font-size: 16px;
+  color: rgb(110, 110, 110);
+  margin-right: 20px;
 }
 .about-writing>button{
   margin-top: 40px;
@@ -216,14 +187,14 @@ h2{
 
 /* Style for the skill name */
 .skill-container > p {
-  margin: 0; /* Remove any margin to avoid unnecessary space */
+  margin-left: 5; /* Remove any margin to avoid unnecessary space */
   width: 100%; /* Ensure the skill name takes up its designated space */
   font-weight: bold;
 }
 
 /* Progress bar container */
 .progress-bar-container {
-  width: 100%;
+  width: 90%;
   height: 20px;
   background-color: #f3f3f3;
   border-radius: 10px;
@@ -401,7 +372,7 @@ h2{
 
 footer{
   background-color: rgba(0, 0, 0, 0.897);
-  height: 350px;
+  width: 100%;
 }
 footer>div>div>p{
   color: rgb(192, 192, 192);
@@ -426,9 +397,110 @@ footer>p{
   text-align: center;
   font-size: 24px;
   margin-top: 35px;
+  margin-bottom: 50px;
 }
 footer>p>i{
   margin-left: 20px;
   cursor: pointer;
 }
-
+section{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+/*Making the websie Responsive*/
+@media (max-width:906px){
+  .about-img{
+    display: none;
+  }
+  .about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .table{
+    align-self: center;
+  }
+  .hero-button{
+    align-self: center;
+  }
+  .service{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .card{
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+  .hero-img{
+    height: 500px;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
+  section{
+    width: 100%;
+    margin: 0;
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-container>p{
+    margin-left: 15px;
+  }
+  li{
+    display: none;
+  }
+}
+@media(max-width:750px){
+  *{
+    text-align: center;
+  }
+  li{
+    display: none;
+  }
+  .about-img{
+    display: none;
+  }
+  .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 90%;
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topic-p{
+    font-size: 12.5px;
+  }
+  .value-p{
+    font-size: 13px;
+  }
+  footer>div>div>p{
+    text-align: start;
+    font-size: 15px;
+  }
+  footer>div>div>h2{
+    text-align: start;
+    font-size: 17px;
+  }
+  .last-line{
+    font-size: 19px;
+  }
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+  }
+}
